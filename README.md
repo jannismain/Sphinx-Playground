@@ -1,10 +1,27 @@
-# Sphinx RTD Theme Template
-[![Documentation Status](https://readthedocs.org/projects/sphinx-rtd-theme-template/badge/?version=latest)](https://sphinx-rtd-theme-template.readthedocs.io/en/latest/?badge=latest)
+# Sphinx Playground
 
-Sphinx template based on Sphinx RTD Theme, modified as noted at:-
+This repository explores what is possible when using Sphinx and sphinx_rtd_theme to create ambitious documentation.
 
-https://sphinx-rtd-theme-template.readthedocs.io/en/latest/
+## References
 
-For some further information and tips on the setup of the theme you can refer to the following blog post:-
+### Sphinx
 
-https://engineervsheep.com/2019/parabola-8/
+- [Sphinx Documentation](https://www.sphinx-doc.org/en/master/contents.html)
+- [Sphinx - LaTeX](https://www.sphinx-doc.org/en/master/latex.html)
+
+### Contributors
+
+- [Styled Tables](https://cloud-sptheme.readthedocs.io/en/latest/lib/cloud_sptheme.ext.table_styling.html)
+- [napoleon Config](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/sphinxcontrib.napoleon.html#sphinxcontrib.napoleon.Config)
+
+### Theming
+
+- [Sphinx Bootstrap Theme](https://github.com/ryan-roemer/sphinx-bootstrap-theme)
+
+### Documentations built with Sphinx
+
+- [Ansible Documentation](https://github.com/ansible/ansible/tree/devel/docs/docsite/)
+
+## Credit
+
+Credit goes to [Agent666](https://github.com/Agent6-6-6) for the initial version of this Sphinx template. Also see his [blog Post explaining the creation of this template.](https://engineervsheep.com/2019/parabola-8/)

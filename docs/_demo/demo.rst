@@ -226,7 +226,7 @@ Code with Sidebar
 
     With a sidebar on the right.
 
-.. literalinclude:: _test_module/test.py
+.. literalinclude:: ../../src/_test_module/test.py
     :language: python
     :caption: Literal includes can also have captions.
     :linenos:

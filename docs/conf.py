@@ -9,27 +9,23 @@ import sys
 
 # add paths relative to this conf.py file to directories that include files to be processed &
 # added to documentation based on docstrings within modules
-sys.path.insert(0, os.path.abspath('../../'))  # root directory of repository
-sys.path.insert(0, os.path.abspath('../../docs/source/_demo/_test_module'))  # path for demo test.py file
-
+basedir = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'src'))
+sys.path.insert(0, os.path.join(basedir, '_test_module'))
+sys.path.insert(0, os.path.join(basedir, 'napoleon'))
+sys.path.insert(0, basedir)
 
 # -- Project information -----------------------------------------------------
 
-project = 'Sphinx RTD Theme Template'
-copyright = '2019, Agent666'
-author = 'Agent666'
+project = 'Sphinx Playground'
+copyright = '2019, Jannis Mainczyk'
+author = 'Jannis Mainczyk'
 
 # The short X.Y version
-version = '1.000'
+version = '1.0.0'
 # The full version, including alpha/beta/rc tags
-release = '1.000'
-
+release = '1.0.0'
 
 # -- General configuration ---------------------------------------------------
-
-# If your documentation needs a minimal Sphinx version, state it here.
-#
-# needs_sphinx = '1.0'
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
@@ -44,6 +40,9 @@ extensions = [
     'sphinx.ext.githubpages',
     'sphinx.ext.napoleon',
     'cloud_sptheme.ext.table_styling',
+    'sphinxcontrib.mermaid',
+    'sphinxcontrib.programoutput',
+    'recommonmark',
 ]
 # note to install cloud sphinx theme run 'pip install cloud_sptheme', this is required for extended support of tables
 # see https://cloud-sptheme.readthedocs.io/en/latest/lib/cloud_sptheme.ext.table_styling.html
@@ -78,8 +77,7 @@ language = None
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'sphinx'
-
+pygments_style = 'lovelace'
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -99,6 +97,8 @@ html_theme_options = {
     'includehidden': True,
     'titles_only': False,
 }
+html_show_sphinx = False
+html_copy_source = False
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -122,9 +122,18 @@ latex_elements = {
     # The font size ('10pt', '11pt' or '12pt').
     'pointsize': '11pt',
     # Additional stuff for the LaTeX preamble.
-    'preamble': r'''
+    'preamble':
+        r'''
         \\usepackage{charter}
         \\usepackage[defaultsans]{lato}
         \\usepackage{inconsolata}
     ''',
 }
+
+# -- intersphinx mapping ---------------------------
+
+# intersphinx_mapping = {
+#     'python2': ('https://docs.python.org/2/', (None, 'python2.inv')),
+#     'python': ('https://docs.python.org/3/', (None, 'python.inv')),
+#     'jinja': ('http://jinja.pocoo.org/docs/', (None, 'jinja.inv'))
+# }

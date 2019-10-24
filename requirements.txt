@@ -1,0 +1,7 @@
+Sphinx
+sphinx_rtd_theme
+Pygments
+cloud_sptheme
+recommonmark
+sphinxcontrib-programoutput
+sphinxcontrib-mermaid

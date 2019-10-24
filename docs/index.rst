@@ -1,9 +1,5 @@
-Welcome to Agent666's Sphinx RTD Theme Template
-===============================================
-.. image:: https://readthedocs.org/projects/sphinx-rtd-theme-template/badge/?version=latest
-    :target: https://sphinx-rtd-theme-template.readthedocs.io/en/latest/?badge=latest
-    :alt: Documentation Status
-
+Sphinx Playground Documentation
+===============================
 
 Changes from the standard Sphinx theme
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -46,10 +42,6 @@ Changes from the standard Sphinx theme
       "--skip-string-normalization",
    ],
 
-Resulting visual changes
-^^^^^^^^^^^^^^^^^^^^^^^^
-.. image:: /_images/Comparison.png
-
 To Use
 ^^^^^^
 * Copy the ``docs`` folder to your repository
@@ -73,10 +65,6 @@ Prerequisites
 * Pygments Code Syntax Highlighter - run ``pip install Pygments`` at the command prompt (http://pygments.org/)
 
 * Cloud Sphinx Theme - run ``pip install cloud_sptheme`` at the command prompt  (adds more functionality with respect to tables, see https://cloud-sptheme.readthedocs.io/en/latest/lib/cloud_sptheme.ext.table_styling.html)
-
-Support
--------
-If you require support or have any feature requests related to the *Sphinx RTD Theme Template* package please feel free to raise an issue on `Github <https://github.com/Agent6-6-6/Sphinx-RTD-Theme-Template/issues>`_.
 
 For some further information and tips on setting up the theme you can refer to this blog post:-
 https://engineervsheep.com/2019/parabola-8/
@@ -108,5 +96,20 @@ This project is licensed under the MIT license.
     _demo/demo
     _demo/lists_tables
     _demo/api
+    _demo/admonitions
+
+.. .. toctree::
+..     :maxdepth: 2
+..     :numbered:
+..     :caption: Napoleon Examples (apidoc)
+
+..     napoleon_api/example_google.rst
+..     napoleon_api/example_numpy.rst
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Napoleon Examples (apidoc, modules)
+
+    napoleon_api/modules
 
 .. ........................................................................................
